@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thegioididong Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-bar {
+            background: #ffcc00;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 5px;
+        }
+
+        .menu a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+
+        .products {
+            padding: 20px;
+        }
+
+        .product-list {
+            display: flex;
+            gap: 20px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+        }
+
+        .price {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo">thegioididong</div>
+            <input type="text" placeholder="Tìm kiếm...">
+            <div class="menu">
+                <a href="#">Điện thoại</a>
+                <a href="#">Laptop</a>
+                <a href="#">Phụ kiện</a>
+                <a href="#">Smartwatch</a>
+                <a href="#">Đồng hồ</a>
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+        <img src="banner.jpg" alt="Khuyến mãi Xiaomi">
+    </section>
+    <section class="products">
+        <h2>Khuyến mãi Online</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="oppo.jpg" alt="OPPO A38">
+                <p>OPPO A38 8GB/128GB</p>
+                <p class="price">3.990.000đ</p>
+            </div>
+            <div class="product">
+                <img src="ipad.jpg" alt="iPad mini 7">
+                <p>iPad mini 7 5G 128GB</p>
+                <p class="price">17.290.000đ</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
