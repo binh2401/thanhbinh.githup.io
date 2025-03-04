@@ -5,102 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thegioididong Clone</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .top-bar {
-            background: #ffcc00;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        input[type="text"] {
-            width: 300px;
-            padding: 5px;
-        }
-
-        .menu a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-
-        .banner img {
-            width: 100%;
-            height: auto;
-        }
-
-        .products {
-            padding: 20px;
-        }
-
-        .product-list {
-            display: flex;
-            gap: 20px;
-        }
-
-        .product {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .product img {
-            max-width: 100%;
-        }
-
-        .price {
-            color: red;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <div class="top-bar">
             <div class="logo">thegioididong</div>
-            <input type="text" placeholder="Tìm kiếm...">
-            <div class="menu">
-                <a href="#">Điện thoại</a>
-                <a href="#">Laptop</a>
-                <a href="#">Phụ kiện</a>
-                <a href="#">Smartwatch</a>
-                <a href="#">Đồng hồ</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="cart">
+                <i class="fas fa-shopping-cart"></i>
             </div>
         </div>
+        <nav class="menu">
+            <a href="#">Điện thoại</a>
+            <a href="#">Laptop</a>
+            <a href="#">Phụ kiện</a>
+            <a href="#">Smartwatch</a>
+            <a href="#">Đồng hồ</a>
+        </nav>
     </header>
+
     <section class="banner">
-        <img src="banner.jpg" alt="Khuyến mãi Xiaomi">
+        <div class="slider">
+            <img src="https://www.thegioididong.com/dtdd/xiaomi-15-256gb?rg=1" class="active">
+            <img src="banner2.jpg">
+            <img src="banner3.jpg">
+        </div>
     </section>
+
     <section class="products">
         <h2>Khuyến mãi Online</h2>
         <div class="product-list">
             <div class="product">
-                <img src="oppo.jpg" alt="OPPO A38">
+                <img src="https://www.thegioididong.com/dtdd/oppo-a38-6gb?utm_flashsale=1" alt="OPPO A38">
                 <p>OPPO A38 8GB/128GB</p>
                 <p class="price">3.990.000đ</p>
             </div>
             <div class="product">
-                <img src="ipad.jpg" alt="iPad mini 7">
+                <img src="https://www.thegioididong.com/may-tinh-bang/ipad-mini-7-5g?utm_flashsale=1" alt="iPad mini 7">
                 <p>iPad mini 7 5G 128GB</p>
                 <p class="price">17.290.000đ</p>
             </div>
+            <div class="product">
+                <img src="samsung.jpg" alt="Samsung Galaxy S23">
+                <p>Samsung Galaxy S23</p>
+                <p class="price">15.990.000đ</p>
+            </div>
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
